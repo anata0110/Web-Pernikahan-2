@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Fadil & Rasyad</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Menggunakan warna solid yang netral (Linen/Krem) */
+            background-color: #FAF0E6; 
+            background-image: none;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .slides-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-snap-align: start;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* --- STYLING UNTUK KOTAK PUTIH SLIDE 1 & 3 --- */
+        .slide1-box {
+            background: rgba(255, 255, 255, 0.95); /* Hampir putih solid */
+            padding: 30px; /* Jarak di dalam kotak */
+            border-radius: 15px; /* Sudut membulat yang lembut */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih menonjol */
+            margin: 20px;
+        }
+        /* ----------------------------------------------- */
+
+        /* --- STYLING UNTUK GALERI FOTO --- */
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .photo {
+            width: 100%;
+            height: 150px;
+            object-fit: cover; /* Pastikan foto ter-crop rapi */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Efek hover sederhana */
+        }
+    
+
+        .heart {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #000000;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #000000;
+            margin: 10px 0;
+        }
+
+        h3, h4 {
+            color: #000000;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .info {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .countdown {
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #timer {
+            font-size: 1.5em;
+            color: #000000;
+            font-weight: bold;
+        }
+        
+        #rsvpForm {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 20px auto;
+            gap: 10px;
+        }
+
+        #rsvpForm input, #rsvpForm select, #rsvpForm button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        #rsvpForm button {
+            background: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #rsvpForm button:hover {
+            background: #91ff00;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 1em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+            .info, .countdown, .slide1-box { padding: 15px; } /* Sesuaikan padding kotak putih di mobile */
+            .photos {
+                grid-template-columns: 1fr; /* Stack vertikal di mobile */
+                gap: 10px;
+            }
+            .photo {
+                height: 200px; /* Lebih tinggi di mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio controls>
+        <source src="Westlife - Beautiful in White.mp3" type="
+        audio/mpeg">
+    </audio>
+    <div class="slides-container">
+        <section id="slide1" class="slide active">
+            <div class="content slide1-box"> 
+                <h1>Pernikahan</h1>
+                <h2>Adelio & Louis</h2>
+                <p>Matius 19:6</p>
+                <p>Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia</p>
+                <div class="photos">
+                    <img src="images (1).jpg" alt="Foto 1" class="photo">
+                    <img src="images (2).jpg" alt="Foto 2" class="photo">
+                    <img src="images.jpg" alt="Foto 3" class="photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="slide2" class="slide">
+            <div class="content">
+                <h3>INFO ACARA</h3>
+                <div class="info">
+                    <p><strong>Tanggal:</strong> Jumat, 25 Oktober 2025</p>
+                    <p><strong>Waktu:</strong> Pukul 12:00 Wib</p>
+                    <p><strong>Lokasi:</strong>Hotel Pacific Palace</p>
+                </div>
+                <div class="countdown">
+                    <h4>Sisa Waktu Menuju Acara</h4>
+                    <p>Jumat, 25 Oktober 2025</p> 
+                    <div id="timer">
+                        <span id="days"></span> Hari
+                        <span id="hours"></span> Jam
+                        <span id="minutes"></span> Menit
+                        <span id="seconds"></span> Detik
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide3" class="slide">
+            <div class="content slide1-box"> <h3>Ayo Hadir Di Dalam Acara Kami</h3>
+                <form id="rsvpForm">
+                    <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    <select id="attendance">
+                        <option value=""></option>
+                        <option value="yes">Ya</option>
+                        <option value="no">Tidak</option>
+                    </select>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Tanggal Acara: Jumat, 10 Oktober 2025, Pukul 08:00 WIB
+        const weddingDate = new Date('2025-10-10T08:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                document.getElementById('timer').innerHTML = 'Pernikahan Sedang Berlangsung! 🎉';
+                // Hentikan interval jika acara sudah dimulai
+                clearInterval(countdownInterval); 
+                return;
+            }
+
+            // Perhitungan untuk hari, jam, menit, dan detik
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Menampilkan di elemen HTML
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        }
+
+        // Panggil fungsi setiap 1 detik
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
